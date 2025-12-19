@@ -1,5 +1,8 @@
+// Use environment variable for API URL, fallback to relative path for dev
+const API_BASE_URL = import.meta.env.VITE_API_URL || "";
+
 export async function fetchEstimate({ area, constructionType, rooms }) {
-  const response = await fetch("/api/estimate", {
+  const response = await fetch(`${API_BASE_URL}/api/estimate`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

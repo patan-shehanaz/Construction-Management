@@ -9,6 +9,11 @@ export default defineConfig({
       "/api": "http://localhost:4000",
     },
   },
+  // Production build settings
+  build: {
+    outDir: "dist",
+    sourcemap: false,
+  },
 });
 
 
