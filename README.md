@@ -223,29 +223,10 @@ This is all constant‑time arithmetic ⇒ **O(1)** time complexity.
 
 ---
 
-### 7. How to Run the Project
-
-#### 1) Install backend dependencies
-```bash
-cd backend
-npm install
-npm run start   # or: npm run dev (with nodemon)
-```
-
-Backend will listen on **port 4000**.
-
-#### 2) Install frontend dependencies
-```bash
-cd ../frontend
-npm install
-npm run dev
-```
-
-Frontend will run on **http://localhost:5173** and proxy `/api` calls to the backend.
 
 ---
 
-### 8. Optional Features Explained
+### 7. Optional Features Explained
 
 #### Help / Chat section (rule‑based)
 - Implemented in `HelpChat.jsx` and `faqData.js`.
@@ -262,7 +243,7 @@ Frontend will run on **http://localhost:5173** and proxy `/api` calls to the bac
 
 ---
 
-### 9. Future Improvements (if asked in interview)
+### 8. Future Improvements
 
 - Add **authentication** so users can save multiple projects.
 - Persist estimates in a **database** instead of keeping everything in memory.
